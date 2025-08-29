@@ -31,7 +31,7 @@ const createUserService = async (name, email, password) => {
 const loginService = async (email1, password) => {
 try {
     //fetch user by email
-    const user = await User.findone({email: email1});
+    const user = await User.findOne({email: email1});
     if (user) {
     //compare password
         const isMatchPassword = await bcrypt.compare(password, user.password);

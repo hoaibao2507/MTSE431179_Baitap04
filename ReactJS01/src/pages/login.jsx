@@ -4,7 +4,6 @@ import { loginApi } from '../util/api';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../components/context/auth.context';
 import { ArrowLeftOutlined } from '@ant-design/icons';
-
 const LoginPage = () => {
   const navigate = useNavigate();
   const { setAuth } = useContext(AuthContext);
@@ -37,7 +36,7 @@ const LoginPage = () => {
   };
 
   return (
-    <Row justify="center" style={{ marginTop: "30px" }}>
+    <Row justify="center" style={{ marginTop: "30px"}}>
       <Col xs={24} md={16} lg={8}>
         <fieldset
           style={{
@@ -45,6 +44,8 @@ const LoginPage = () => {
             margin: "5px",
             border: "1px solid #ccc",
             borderRadius: "5px",
+            width: "1000px",
+            maxWidth: '100%'
           }}
         >
           <legend>Đăng Nhập</legend>

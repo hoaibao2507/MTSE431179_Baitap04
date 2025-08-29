@@ -35,7 +35,9 @@ const RegisterPage = () => {
                     padding: "15px",
                     margin: '5px',
                     border: '1px solid #ccc',
-                    borderRadius: '5px'
+                    borderRadius: '5px',
+                    width: "1000px",
+                    maxWidth: '100%'
                 }}>
                     <legend>Đăng ký tài khoản</legend>
                     <Form 
